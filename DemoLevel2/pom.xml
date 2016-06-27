@@ -97,7 +97,7 @@
                     <ojdeploy>${oracleHome}/jdeveloper/jdev/bin/ojdeploy</ojdeploy>
                     <workspace>${basedir}/../TestMavenDeps.jws</workspace>
                     <project>DemoLevel2</project>
-                    <profile>TestMavenDeps_DemoLevel2</profile>
+                    <profile>adflibDemoLevel2</profile>
                     <outputfile>${project.build.directory}/${project.build.finalName}.jar</outputfile>
                 </configuration>
                 <executions>
