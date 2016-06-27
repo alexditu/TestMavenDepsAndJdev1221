@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="DemoLevel1AppModule"
+  Version="12.2.1.0.31"
+  InheritPersonalization="merge"
+  ComponentClass="test.mvn.level1.DemoLevel1AppModuleImpl"
+  ClearCacheOnRollback="true"
+  ComponentInterface="test.mvn.level1.common.DemoLevel1AppModule">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="test.mvn.level1.DemoLevel1AppModule_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="testLevel1"
+      MethodName="testLevel1">
+      <Return
+        Name="_return_type_"
+        Type="java.lang.String"/>
+      <Parameter
+        Name="param"
+        Type="java.lang.String"/>
+    </Method>
+  </ClientInterface>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="test.mvn.level1.DemoLevel1Bundle"/>
+  </ResourceBundle>
+</AppModule>

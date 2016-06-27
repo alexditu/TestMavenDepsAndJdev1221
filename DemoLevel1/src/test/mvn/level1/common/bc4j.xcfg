@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="test.mvn.level1.DemoLevel1AppModule">
+      <AppModuleConfig name="DemoLevel1AppModuleLocal" ApplicationName="test.mvn.level1.DemoLevel1AppModule" jbo.project="test.mvn.level1.DemoLevel1" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="test.mvn.level1.DemoLevel1AppModule"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="DemoLevel1AppModuleShared" ApplicationName="test.mvn.level1.DemoLevel1AppModule" jbo.project="test.mvn.level1.DemoLevel1" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="test.mvn.level1.DemoLevel1AppModule"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
